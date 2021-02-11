@@ -126,7 +126,7 @@ body section .box div span:nth-child(3) {
           transform: rotateX(90deg) translate3d(0, 0, 200px);
 }
 
-@media (min-width: 340px) and (max-width: 576px) {
+@media (min-width: 330px) and (max-width: 576px) {
   .imgLogo {
     width: 100% !important;
   }
