@@ -115,7 +115,7 @@ body {
     }
 }
 
-@media (min-width: 350px) and (max-width: 676px) {
+@media (min-width: 350px) and (max-width: 576px) {
     .imgLogo {
         width: 100% !important;
     }
@@ -123,7 +123,7 @@ body {
         height: 1250px !important;
     }
     .textGroup {
-        top: 80% !important;
+        top: 100% !important;
         left: 0 !important;
         width: 100% !important;
 
@@ -135,7 +135,7 @@ body {
         height: 120vh !important;
         .box {
             position: absolute;
-            top: calc(50% - 200px) !important;
+            top: calc(50% - 100px) !important;
             left: calc(50% - 120px) !important;
             width: 300px !important;
             height: 400px !important;
@@ -172,4 +172,65 @@ body {
         }
     }
     
+}
+@media (min-width: 577px) and (max-width: 976px) {
+    .imgLogo {
+        width: 100% !important;
+    }
+    body {
+        height: 1250px !important;
+    }
+    .textGroup {
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+
+        .title {
+            font-size: 28px;
+        }
+
+        p {
+            padding: 15px 120px !important;
+        }
+    }
+    section {
+        height: 120vh !important;
+        .box {
+            position: absolute;
+            top: 50% !important;
+            left: calc(50% - 120px) !important;
+            width: 300px !important;
+            height: 400px !important;
+    
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90% !important;
+                height: 60% !important;
+                transform-style: preserve-3d;
+                transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,70px) !important;
+    
+                span {
+
+                    &:nth-child(1){
+                        transform: rotateX(0deg) translate3d(0,0,200px) !important;
+                    }
+
+                    &:nth-child(2){
+                        width: 90%;
+                        transform: rotateY(90deg) translate3d(0,31px,-85px) !important;
+                        
+                        video {
+                            transform: rotateY(180deg);
+                        }
+                    }
+
+                    &:nth-child(3){
+                        transform: rotateX(90deg) translate3d(0,80px,120px) !important;
+                    }
+                }
+            }
+        }
+    }
 }
