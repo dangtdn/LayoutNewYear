@@ -24,7 +24,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            width: 300px;
+            width: 350px;
 
             img {
                 width: 100%;
@@ -40,7 +40,22 @@ body {
             background-image: url(../img/bgText.jpg);
             background-position: center center;
             background-size: cover;
-            padding: 80px 20px;
+
+            .title {
+                display: block;
+                color: red;
+                font-weight: 700;
+                font-size: 23px;
+                padding: 15px 0px;
+                text-align: center;
+            }
+
+            p {
+                padding: 15px;
+                font-size: 17px;
+                letter-spacing: 0.3;
+                text-align: left;
+            }
         }
 
         .box {
@@ -48,7 +63,7 @@ body {
             top: calc(50% - 200px);
             left: calc(50% - 200px);
             width: 400px;
-            height: 400px;
+            min-height: 400px;
             transform-style: preserve-3d;
 
             div {
@@ -98,4 +113,63 @@ body {
             }
         }
     }
+}
+
+@media (min-width: 370px) and (max-width: 576px) {
+    .imgLogo {
+        width: 100% !important;
+    }
+    body {
+        height: 1570px !important;
+    }
+    .textGroup {
+        top: 80% !important;
+        left: 0 !important;
+        width: 100% !important;
+
+        p {
+            padding: 15px 40px !important;
+        }
+    }
+    section {
+        height: 120vh !important;
+        .box {
+            position: absolute;
+            top: calc(50% - 200px) !important;
+            left: calc(50% - 120px) !important;
+            width: 300px !important;
+            height: 400px !important;
+    
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90% !important;
+                height: 60% !important;
+                transform-style: preserve-3d;
+                transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,70px) !important;
+    
+                span {
+
+                    &:nth-child(1){
+                        transform: rotateX(0deg) translate3d(0,0,200px) !important;
+                    }
+
+                    &:nth-child(2){
+                        width: 90%;
+                        transform: rotateY(90deg) translate3d(0,31px,-85px) !important;
+                        
+                        video {
+                            transform: rotateY(180deg);
+                        }
+                    }
+
+                    &:nth-child(3){
+                        transform: rotateX(90deg) translate3d(0,80px,120px) !important;
+                    }
+                }
+            }
+        }
+    }
+    
 }
